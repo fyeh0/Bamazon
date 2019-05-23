@@ -1,0 +1,24 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fyeh0/Bamazon.git"
+  },
+  "author": "fyeh0",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fyeh0/Bamazon/issues"
+  },
+  "homepage": "https://github.com/fyeh0/Bamazon#readme",
+  "dependencies": {
+    "express": "^4.17.0",
+    "mysql2": "^1.6.5",
+    "sequelize": "^5.8.6"
+  }
+}
