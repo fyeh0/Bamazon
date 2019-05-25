@@ -1,3 +1,11 @@
-.navbar-brand {
+#bamazon-logo {
     font-family: 'Righteous', cursive;
+    font-size: 36px;
+}
+
+.contentBody {
+    border: 1px solid rgb(116, 116, 116);
+    max-width: 960px;
+    margin: auto;
+    margin-top: 45px;
 }
