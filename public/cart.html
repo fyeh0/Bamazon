@@ -15,7 +15,7 @@
 <body>
     <!--Header Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand" id="bamazon-logo" href="#">bamazon</a>
+        <a class="navbar-brand" id="bamazon-logo" href="/">bamazon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cart</a>
+                    <a class="nav-link" href="/cart">Cart</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -53,13 +53,18 @@
 
     <div class="contentBody rounded">
         <nav class="navbar navbar-light bg-light">
-            <a class="navbar-brand" href="#">Cart</a>
+            <span class="navbar-brand mb-0 h1">Navbar</span>
         </nav>
         <div>
             <p>cart items here</p>
         </div>
     </div>
 
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="footer-links justify-content-right">
+            <a href="/api/products">API</a> | <a href="https://github.com/fyeh0" target="blank">GitHub</a>
+        </div>
+    </nav>
 </body>
 
 </html>

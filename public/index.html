@@ -15,7 +15,7 @@
 <body>
     <!--Header Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-        <a class="navbar-brand" id="bamazon-logo" href="#">bamazon</a>
+        <a class="navbar-brand" id="bamazon-logo" href="/">bamazon</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -24,10 +24,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Cart</a>
+                    <a class="nav-link" href="/cart">Cart</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -37,7 +37,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
                         <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
+                        <!-- <div class="dropdown-divider"></div> -->
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
                 </li>
@@ -55,23 +55,42 @@
             <div class="card-header">
                 <ul class="nav nav-tabs card-header-tabs justify-content-end">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Active</a>
+                        <a class="nav-link active" href="#">Weapons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Armor</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <a class="nav-link" href="#">Potions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Miscellaneous</a>
                     </li>
                 </ul>
             </div>
-            <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="display-store-items">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">item name</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">item price</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="card-link">Add to Cart</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="footer-links justify-content-right">
+            <a href="/api/products">API</a> | <a href="https://github.com/fyeh0" target="blank">GitHub</a>
+        </div>
+    </nav>
 
 </body>
 
