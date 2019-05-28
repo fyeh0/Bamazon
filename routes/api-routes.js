@@ -9,9 +9,4 @@ module.exports = function(app) {
         });
     });
 
-    // app.post("/api/products", function(req, res) {
-    //     console.log("here");
-    //     res.json(response);
-    // })
-
 }
