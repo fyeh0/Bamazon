@@ -2,7 +2,7 @@ module.exports = [
     {
         "product_name": "Lockpick",
         "department_name": "miscellaneous",
-        "price": 7,
+        "price": 2,
         "stock_quantity": 99
     },
     {
