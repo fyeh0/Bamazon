@@ -1,8 +1,8 @@
-[
+module.exports = [
     {
         "product_name": "Lockpick",
         "department_name": "miscellaneous",
-        "price": 2,
+        "price": 7,
         "stock_quantity": 99
     },
     {

@@ -29,19 +29,8 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/cart">Cart</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Products
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <!-- <div class="dropdown-divider"></div> -->
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
             </ul>
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Whatcha looking for?"
                     aria-label="Search">
@@ -50,40 +39,27 @@
         </div>
     </nav>
 
-    <div class="contentBody rounded">
-        <div class="card text-center">
-            <div class="card-header">
-                <ul class="nav nav-tabs card-header-tabs justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Weapons</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Armor</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Potions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Food</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Miscellaneous</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="display-store-items">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">item name</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">item price</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="card-link">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="container">
+        <h2>Products</h2>
+        <p>Everything's for sale!</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <!-- The scope attribute specifies that this is a header for a column -->
+                    <th scope="col">Product</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Quantity</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <div id="product-area"></div>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
     <nav class="navbar fixed-bottom navbar-light bg-light">
@@ -92,6 +68,9 @@
         </div>
     </nav>
 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </body>
 
 </html>

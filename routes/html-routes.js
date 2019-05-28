@@ -8,5 +8,4 @@ module.exports = function(app) {
     app.get("/cart", function(req, res) {
         res.sendFile(path.join(__dirname, "../public/cart.html"))
     });
-
 }
