@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bamazon</title>
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Header Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand" id="bamazon-logo" href="/">bamazon</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/cart">Cart</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Whatcha looking for?"
+                    aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Products</h2>
+        <p>Everything's for sale!</p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <!-- The scope attribute specifies that this is a header for a column -->
+                    <th scope="col">Product</th>
+                    <th scope="col">Department</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Stock</th>
+                    <th scope="col">Quantity</th>
+
+                </tr>
+            </thead>
+            <tbody id="product-area">
+                <tr>
+                    <div id="product"></div>
+                </tr>
+            </tbody>
+        </table>
+        <form action="cart.html"><button type="submit" action="/cart" id="add-to-cart">Add to Cart</button></form>
+    </div>
+
+    <nav class="navbar fixed-bottom navbar-light bg-light">
+        <div class="footer-links justify-content-right">
+            <a href="/api/products">API</a> | <a href="https://github.com/fyeh0" target="blank">GitHub</a>
+        </div>
+    </nav>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
