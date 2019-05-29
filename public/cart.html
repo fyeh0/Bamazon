@@ -31,7 +31,7 @@
                 </li>
                 </li>
             </ul>
-            
+
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Whatcha looking for?"
                     aria-label="Search">
@@ -40,13 +40,32 @@
         </div>
     </nav>
 
-
-    <div class="contentBody rounded">
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1">Viewing Cart</span>
-        </nav>
-        <div>
-            <p>cart items here</p>
+    <div class="container">
+        <div class="contentBody rounded">
+            <nav class="navbar navbar-light bg-light">
+                <span class="navbar-brand mb-0 h1">Viewing Cart</span>
+            </nav>
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <!-- The scope attribute specifies that this is a header for a column -->
+                            <th scope="col">Product</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cart-area">
+                        <tr>
+                            <div id="cart-products"></div>
+                        </tr>
+                        <tr>
+                            <div id="cart-totals"></div>
+                        </tr>
+                    </tbody>
+                </table>
+                <p id="default-cart-text">Oops! It doesn't look like you have anything in your cart!</p>
+            </div>
         </div>
     </div>
 
