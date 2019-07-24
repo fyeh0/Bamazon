@@ -1,16 +1,16 @@
 module.exports = {
   "development": {
-    "user": process.env.DB_USER,
+    "username": "root",
     "password": process.env.DB_PASS,
     "database": "bamazon",
-    "host": process.env.DB_HOST,
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "test": {
-    "user": process.env.DB_USER,
+    "username": "root",
     "password": process.env.DB_PASS,
     "database": "bamazon",
-    "host": process.env.DB_HOST,
+    "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
